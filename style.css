@@ -22,7 +22,11 @@ body {
 #profile-image {
     width: 400px;
     height: 400px;
-    border-radius: 16px;
+    border-radius: 10%;
+}
+
+.dynamic-text-color {
+    color: royalblue;
 }
 
 .social-links img {
@@ -54,4 +58,12 @@ table {
 
 p {
     font-size: 1.5rem;
+}
+
+#qualifications>ol {
+    font-size: 1rem;
+}
+
+#hobbies>ul {
+    font-size: 1rem;
 }
