@@ -2,16 +2,44 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    border: 1px solid white;
+    background: hsl(0, 0%, 100%);
+    border-bottom: 4px solid;
+}
+
+header nav > a{
+    margin: 16px;
+    text-decoration: none;
+    padding: 8px;
+}
+header nav > a:hover{
+    text-decoration: underline;
+    /* background-color: hsl(0deg 0%  50% / 48%); */
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    border-top: 4px solid;
 }
 
 .container {
     padding: 16px;
 }
 
-.container>div>h2 {
+.container>section>h2 {
     text-align: center;
 }
 
@@ -85,6 +113,13 @@ form#contact {
     font-weight: 600;
 }
 
-#contact input, #contact textarea, #contact button {
+#contact input, 
+#contact textarea, 
+#contact button {
     width: 100%;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+#contact-me {
+    margin-top: 16px;
 }
